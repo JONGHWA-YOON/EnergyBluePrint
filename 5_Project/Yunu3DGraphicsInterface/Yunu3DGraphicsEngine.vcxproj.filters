@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Light">
+      <UniqueIdentifier>{adaa4b96-5851-486e-b2ce-2dc74cf10535}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Renderable">
+      <UniqueIdentifier>{403431dd-669e-49b7-b796-81caf1a7d5bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Light">
+      <UniqueIdentifier>{f9985aa0-8a49-4960-87dd-3601ffe8fdc4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Resource">
+      <UniqueIdentifier>{69b1a902-91bf-4341-8b17-1a072d56cb23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Unknown">
+      <UniqueIdentifier>{f28f4c67-367a-4a08-9982-890b977bc7de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Symbols">
+      <UniqueIdentifier>{5f463ee0-fbc4-449c-aa52-993febc96d7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Camera">
+      <UniqueIdentifier>{52902c73-a1cf-4597-8353-b4926e9909d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\YunuGIPtr">
+      <UniqueIdentifier>{c8551c53-2e34-4317-950a-488ea95432f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\IDebugObject">
+      <UniqueIdentifier>{c22f065a-2267-4918-b8f9-c06b8ca7c90b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="raw">
+      <UniqueIdentifier>{00aca0d4-87e8-44a9-b601-3ef75f6cc8d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\IEventHandler">
+      <UniqueIdentifier>{4fa0bd39-794d-4fbb-9419-26d48bdf6814}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IUserInterface">
+      <UniqueIdentifier>{3e7d64aa-dab9-44d7-b4c1-4b150ee20d3a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Singleton">
+      <UniqueIdentifier>{f2ad82ce-4aff-4f63-b32e-56cab03a16d9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="IYunuGI3DRenderer.h">
+      <Filter>Header Files\Singleton</Filter>
+    </ClInclude>
+    <ClInclude Include="IYunuGIFactory.h">
+      <Filter>Header Files\Singleton</Filter>
+    </ClInclude>
+    <ClInclude Include="IYunuGIDirectionalLight.h">
+      <Filter>Header Files\Light</Filter>
+    </ClInclude>
+    <ClInclude Include="IYunuGIPointLight.h">
+      <Filter>Header Files\Light</Filter>
+    </ClInclude>
+    <ClInclude Include="IYunuGISpotLight.h">
+      <Filter>Header Files\Light</Filter>
+    </ClInclude>
+    <ClInclude Include="IYunuGISkinnedMesh.h">
+      <Filter>Header Files\Renderable</Filter>
+    </ClInclude>
+    <ClInclude Include="IYunuGIStaticMesh.h">
+      <Filter>Header Files\Renderable</Filter>
+    </ClInclude>
+    <ClInclude Include="IYunuGIMaterial.h">
+      <Filter>Header Files\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="IYunuGITexture.h">
+      <Filter>Header Files\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="IYunuGIResourceManager.h">
+      <Filter>Header Files\Singleton</Filter>
+    </ClInclude>
+    <ClInclude Include="IUnknown.h">
+      <Filter>Header Files\Unknown</Filter>
+    </ClInclude>
+    <ClInclude Include="YunuGIGlobal.h">
+      <Filter>Header Files\Symbols</Filter>
+    </ClInclude>
+    <ClInclude Include="IYunuGICamera.h">
+      <Filter>Header Files\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="YunuGIPtr.h">
+      <Filter>Header Files\YunuGIPtr</Filter>
+    </ClInclude>
+    <ClInclude Include="IYunuGIRenderable.h">
+      <Filter>Header Files\Renderable</Filter>
+    </ClInclude>
+    <ClInclude Include="IYunuGIDebugObject.h">
+      <Filter>Header Files\IDebugObject</Filter>
+    </ClInclude>
+    <ClInclude Include="YunuGIMatrix4x4.h">
+      <Filter>raw</Filter>
+    </ClInclude>
+    <ClInclude Include="YunuGIColor.h">
+      <Filter>raw</Filter>
+    </ClInclude>
+    <ClInclude Include="IYunuGIDebugSphere.h">
+      <Filter>Header Files\IDebugObject</Filter>
+    </ClInclude>
+    <ClInclude Include="IYunuGIDebugCube.h">
+      <Filter>Header Files\IDebugObject</Filter>
+    </ClInclude>
+    <ClInclude Include="IYunuGIEventHandler.h">
+      <Filter>Header Files\IEventHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="IYunuGIUIImage.h">
+      <Filter>IUserInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="IYunuGIUIObject.h">
+      <Filter>IUserInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="IYunuGIUIText.h">
+      <Filter>IUserInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="YunuGraphicsInterface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Yunu3DGraphicsEngine.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="small.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Yunu3DGraphicsEngine.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

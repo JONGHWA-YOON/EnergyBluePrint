@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{60308f48-95fa-432c-849d-b74be6ccce60}</ProjectGuid>
+    <RootNamespace>Yunuty</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <EnableUnitySupport>true</EnableUnitySupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <EnableUnitySupport>true</EnableUnitySupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <EnableUnitySupport>true</EnableUnitySupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <EnableUnitySupport>true</EnableUnitySupport>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)Bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>Intermediate\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)Bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>Intermediate\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)Bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>Intermediate\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)Bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>Intermediate\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_HAS_STD_BYTE=0;WIN32;_DEBUG;_CONSOLE;YUNUTY_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>YunutyEngine.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(SolutionDir)FMOD\header\;$(SolutionDir)Yunu3DGraphicsInterface;$(SolutionDir)Include\;$(SolutionDir)Include\FMOD\;$(ProjectDir)header\</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <IncludeInUnityFile>true</IncludeInUnityFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)Bin\$(Platform)\$(Configuration)\;$(SolutionDir)Lib\$(Platform)\$(Configuration)\</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Rpcrt4.lib;fmod32_vc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy "$(projectdir)RuntimeDependency\$(platform)\$(configuration)" "$(targetdir)" /D /E /C /Q /H /R /Y /K</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_HAS_STD_BYTE=0;WIN32;NDEBUG;_CONSOLE;YUNUTY_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>YunutyEngine.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(SolutionDir)FMOD\header\;$(SolutionDir)Yunu3DGraphicsInterface;$(SolutionDir)Include\;$(SolutionDir)Include\FMOD\;$(ProjectDir)header\</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <IncludeInUnityFile>true</IncludeInUnityFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)Bin\$(Platform)\$(Configuration)\;$(SolutionDir)Lib\$(Platform)\$(Configuration)\</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Rpcrt4.lib;fmod32_vc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy "$(projectdir)RuntimeDependency\$(platform)\$(configuration)" "$(targetdir)" /D /E /C /Q /H /R /Y /K</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_HAS_STD_BYTE=0;USE_PLAIN_PTR;_DEBUG;_CONSOLE;YUNUTY_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)FMOD\header\;$(SolutionDir)Yunu3DGraphicsInterface;$(SolutionDir)Include\;$(SolutionDir)Include\FMOD\;$(ProjectDir)header\</AdditionalIncludeDirectories>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>YunutyEngine.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <DisableSpecificWarnings>4244;</DisableSpecificWarnings>
+      <IncludeInUnityFile>true</IncludeInUnityFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)Bin\$(Platform)\$(Configuration)\;$(SolutionDir)Lib\$(Platform)\$(Configuration)\</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Rpcrt4.lib;fmod64_vc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy "$(projectdir)RuntimeDependency\$(platform)\$(configuration)" "$(targetdir)" /D /E /C /Q /H /R /Y /K</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_HAS_STD_BYTE=0;USE_PLAIN_PTR;NDEBUG;_CONSOLE;YUNUTY_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)FMOD\header\;$(SolutionDir)Yunu3DGraphicsInterface;$(SolutionDir)Include\;$(SolutionDir)Include\FMOD\;$(ProjectDir)header\</AdditionalIncludeDirectories>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>YunutyEngine.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <IncludeInUnityFile>true</IncludeInUnityFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)Bin\$(Platform)\$(Configuration)\;$(SolutionDir)Lib\$(Platform)\$(Configuration)\</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Rpcrt4.lib;fmod64_vc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy "$(projectdir)RuntimeDependency\$(platform)\$(configuration)" "$(targetdir)" /D /E /C /Q /H /R /Y /K</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="BoxCollider2D.cpp" />
+    <ClCompile Include="AudioSource.cpp" />
+    <ClCompile Include="Cache.cpp" />
+    <ClCompile Include="CircleCollider2D.cpp" />
+    <ClCompile Include="Collider2D.cpp" />
+    <ClCompile Include="Curve.cpp" />
+    <ClCompile Include="DebugCube.cpp" />
+    <ClCompile Include="GameObjectPool.cpp" />
+    <ClCompile Include="LineCollider2D.cpp" />
+    <ClCompile Include="MetaData.cpp" />
+    <ClCompile Include="MetafileManager.cpp" />
+    <ClCompile Include="NavigationField2D.cpp" />
+    <ClCompile Include="NavigationUnit2D.cpp" />
+    <ClCompile Include="NavigationUnit2DReport.cpp" />
+    <ClCompile Include="SoundSystem.cpp" />
+    <ClCompile Include="SoundChannel.cpp" />
+    <ClCompile Include="Random.cpp" />
+    <ClCompile Include="StaticMesh.cpp" />
+    <ClCompile Include="UIImage.cpp" />
+    <ClCompile Include="UIText.cpp" />
+    <ClCompile Include="YunutyGraphicsEventHandler.cpp" />
+    <ClCompile Include="YunutyMathConstants.cpp" />
+    <ClCompile Include="Quaternion.cpp" />
+    <ClCompile Include="RigidBody.cpp" />
+    <ClCompile Include="RigidBody2D.cpp" />
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="Component.cpp" />
+    <ClCompile Include="GameObject.cpp" />
+    <ClCompile Include="GlobalComponent.cpp" />
+    <ClCompile Include="Input.cpp" />
+    <ClCompile Include="Object.cpp" />
+    <ClCompile Include="Rect.cpp" />
+    <ClCompile Include="RectTransform.cpp" />
+    <ClCompile Include="Scene.cpp" />
+    <ClCompile Include="Interval.cpp" />
+    <ClCompile Include="GraphicsRenderer.cpp" />
+    <ClCompile Include="YunutyRenderable.cpp" />
+    <ClCompile Include="YunutySkinnedMesh.cpp" />
+    <ClCompile Include="YunutyTime.cpp" />
+    <ClCompile Include="Transform.cpp" />
+    <ClCompile Include="Vector.cpp" />
+    <ClCompile Include="Vector2.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Vector3.cpp" />
+    <ClCompile Include="WinMain.cpp" />
+    <ClCompile Include="YunutyCycle.cpp" />
+    <ClCompile Include="_XMMath.cpp" />
+    <ClCompile Include="_YunuGIObjects.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="header\DebugCube.h" />
+    <ClInclude Include="header\StaticMesh.h" />
+    <ClInclude Include="header\UIImage.h" />
+    <ClInclude Include="header\UIText.h" />
+    <ClInclude Include="header\YunutyGraphicsEventHandler.h" />
+    <ClInclude Include="header\YunutyRenderable.h" />
+    <ClInclude Include="header\YunutySkinnedMesh.h" />
+    <ClInclude Include="header\YunutyGenericEqual.h" />
+    <ClInclude Include="header\YunutyGenericHash.h" />
+    <ClInclude Include="header\YunutyGenericJsonHandler.h" />
+    <ClInclude Include="header\YunutyStringConversion.h" />
+    <ClInclude Include="_XMMath.h" />
+    <ClInclude Include="_YunuGIObjects.h" />
+    <ClInclude Include="header\AudioSource.h" />
+    <ClInclude Include="header\Cache.h" />
+    <ClInclude Include="header\Curve.h" />
+    <ClInclude Include="header\CanvasRenderSpace.h" />
+    <ClInclude Include="header\BoxCollider2D.h" />
+    <ClInclude Include="header\CircleCollider2D.h" />
+    <ClInclude Include="header\Collider2D.h" />
+    <ClInclude Include="header\Collision.h" />
+    <ClInclude Include="header\Collision2D.h" />
+    <ClInclude Include="header\Camera.h" />
+    <ClInclude Include="header\Component.h" />
+    <ClInclude Include="header\EKeycode.h" />
+    <ClInclude Include="header\GameObject.h" />
+    <ClInclude Include="header\GameObjectPool.h" />
+    <ClInclude Include="header\GlobalComponent.h" />
+    <ClInclude Include="header\IGameObjectParent.h" />
+    <ClInclude Include="header\Input.h" />
+    <ClInclude Include="header\Object.h" />
+    <ClInclude Include="header\Rect.h" />
+    <ClInclude Include="header\RectTransform.h" />
+    <ClInclude Include="header\YunutyMathConstants.h" />
+    <ClInclude Include="header\Quaternion.h" />
+    <ClInclude Include="header\RigidBody.h" />
+    <ClInclude Include="header\RigidBody2D.h" />
+    <ClInclude Include="header\LineCollider2D.h" />
+    <ClInclude Include="header\Random.h" />
+    <ClInclude Include="header\NavigationField2D.h" />
+    <ClInclude Include="header\NavigationUnit2D.h" />
+    <ClInclude Include="header\NavigationUnit2DState.h" />
+    <ClInclude Include="header\NavigationUnit2DReport.h" />
+    <ClInclude Include="header\Scene.h" />
+    <ClInclude Include="header\YunutyTime.h" />
+    <ClInclude Include="header\Transform.h" />
+    <ClInclude Include="header\Vector.h" />
+    <ClInclude Include="header\Vector2.h" />
+    <ClInclude Include="header\Vector3.h" />
+    <ClInclude Include="header\YunutyCycle.h" />
+    <ClInclude Include="header\YunutyEngine.h" />
+    <ClInclude Include="header\Interval.h" />
+    <ClInclude Include="header\SoundSystem.h" />
+    <ClInclude Include="header\SoundChannel.h" />
+    <ClInclude Include="header\GraphicsRenderer.h" />
+    <ClInclude Include="header\JsonReader.h" />
+    <ClInclude Include="header\MetaData.h" />
+    <ClInclude Include="header\MetafileManager.h" />
+    <ClInclude Include="header\ResourceType.h" />
+    <ClInclude Include="header\SingletonClass.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Yunuty.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="icon1.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

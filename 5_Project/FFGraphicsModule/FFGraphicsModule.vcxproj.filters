@@ -1,0 +1,295 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="GraphicsEngine">
+      <UniqueIdentifier>{0c80f279-6668-4f6e-a79c-38d3557f483d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GraphicsPch">
+      <UniqueIdentifier>{198ef664-46d6-4f3d-972d-c4a82d009f36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{aa8d8d18-25b2-439a-a2c4-b6b00904b0c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shader">
+      <UniqueIdentifier>{5ec8172d-716b-4a1c-8c9a-497a249ce757}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{583f2106-7d26-489e-90af-3451d209a71c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\ResourceManager">
+      <UniqueIdentifier>{5a4cac4b-3566-4ea1-b97a-9ee5fc0302ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Builder">
+      <UniqueIdentifier>{e8713741-faa7-4b5d-8e3b-f4986f1ac1b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GraphicsEngine\IGraphics">
+      <UniqueIdentifier>{2c761a52-37c6-4e8d-ae7e-8994fabac678}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FFCamera">
+      <UniqueIdentifier>{83b7200b-d669-40f5-b523-98f88c97a66c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RenderSystem">
+      <UniqueIdentifier>{adde3e57-5f66-4771-8595-fe70c23d72ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InstancingManager">
+      <UniqueIdentifier>{fcd7d161-0fa8-4a6a-b323-1f17fb898597}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TimeManager">
+      <UniqueIdentifier>{39d7cc9b-1a38-40dd-a961-918576e95e2e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GraphicsPch.cpp">
+      <Filter>GraphicsPch</Filter>
+    </ClCompile>
+    <ClCompile Include="FFGraphicsEngine.cpp">
+      <Filter>GraphicsEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Mesh.cpp">
+      <Filter>Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture.cpp">
+      <Filter>Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="Shader.cpp">
+      <Filter>Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="Material.cpp">
+      <Filter>Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="CommandQueue.cpp">
+      <Filter>GraphicsEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="ConstantBuffer.cpp">
+      <Filter>GraphicsEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Device.cpp">
+      <Filter>GraphicsEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="RootSignature.cpp">
+      <Filter>GraphicsEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="SwapChain.cpp">
+      <Filter>GraphicsEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="TableDescriptorHeap.cpp">
+      <Filter>GraphicsEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceManager.cpp">
+      <Filter>Resources\ResourceManager</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderTargetGroup.cpp">
+      <Filter>GraphicsEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="StructuredBuffer.cpp">
+      <Filter>GraphicsEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="IResource.cpp">
+      <Filter>Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="IBuilder.cpp">
+      <Filter>Builder</Filter>
+    </ClCompile>
+    <ClCompile Include="ShaderBuilder.cpp">
+      <Filter>Builder</Filter>
+    </ClCompile>
+    <ClCompile Include="InstancingBuffer.cpp">
+      <Filter>GraphicsEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="IFFGraphics.cpp">
+      <Filter>GraphicsEngine\IGraphics</Filter>
+    </ClCompile>
+    <ClCompile Include="FFCamera.cpp">
+      <Filter>FFCamera</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderSystem.cpp">
+      <Filter>RenderSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleMath.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="InstancingManager.cpp">
+      <Filter>InstancingManager</Filter>
+    </ClCompile>
+    <ClCompile Include="CameraManager.cpp">
+      <Filter>FFCamera</Filter>
+    </ClCompile>
+    <ClCompile Include="FBXLoader.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="MeshData.cpp">
+      <Filter>Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="Frustum.cpp" />
+    <ClCompile Include="TimeManager.cpp">
+      <Filter>TimeManager</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GraphicsPch.h">
+      <Filter>GraphicsPch</Filter>
+    </ClInclude>
+    <ClInclude Include="FFGraphicsEngine.h">
+      <Filter>GraphicsEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="FFGraphicsEngineHeader.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="d3dx12.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Mesh.h">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="Shader.h">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="Material.h">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="CommandQueue.h">
+      <Filter>GraphicsEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="ConstantBuffer.h">
+      <Filter>GraphicsEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="Device.h">
+      <Filter>GraphicsEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="RootSignature.h">
+      <Filter>GraphicsEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="SwapChain.h">
+      <Filter>GraphicsEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="TableDescriptorHeap.h">
+      <Filter>GraphicsEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="DirecX12AndTypedef.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManager.h">
+      <Filter>Resources\ResourceManager</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderTargetGroup.h">
+      <Filter>GraphicsEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="StructuredBuffer.h">
+      <Filter>GraphicsEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="IResource.h">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="IBuilder.h">
+      <Filter>Builder</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderBuilder.h">
+      <Filter>Builder</Filter>
+    </ClInclude>
+    <ClInclude Include="InstancingBuffer.h">
+      <Filter>GraphicsEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="IFFGraphics.h">
+      <Filter>GraphicsEngine\IGraphics</Filter>
+    </ClInclude>
+    <ClInclude Include="FFCamera.h">
+      <Filter>FFCamera</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderSystem.h">
+      <Filter>RenderSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleMath.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="InstancingManager.h">
+      <Filter>InstancingManager</Filter>
+    </ClInclude>
+    <ClInclude Include="CameraManager.h">
+      <Filter>FFCamera</Filter>
+    </ClInclude>
+    <ClInclude Include="FBXLoader.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="MeshData.h">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="Frustum.h" />
+    <ClInclude Include="TimeManager.h">
+      <Filter>TimeManager</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Resources\Shader\deferred.hlsli">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="..\Resources\Shader\forward.hlsli">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="..\Resources\Shader\params.hlsli">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="..\Resources\Shader\skybox.hlsli">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="..\Resources\Shader\utils.hlsli">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="..\Resources\Shader\compute.hlsli">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="..\Resources\Shader\particle.hlsli">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="..\Resources\Shader\debug.hlsli">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="..\Resources\Shader\lightingDirectional.hlsli">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="..\Resources\Shader\lightingPoint.hlsli">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="..\Resources\Shader\lightingSpot.hlsli">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="..\Resources\Shader\deferredFinal.hlsli">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="SimpleMath.inl">
+      <Filter>Utils</Filter>
+    </None>
+    <None Include="..\Resources\Shader\shadow.hlsli">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="..\Resources\Shader\debug_line.hlsli">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="..\Resources\Shader\computeAnimation.hlsli">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="..\Resources\Shader\math.hlsli">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="..\Resources\Shader\deferred_skinned.hlsli">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="..\Resources\Shader\shadow_skinned.hlsli">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="..\Resources\Shader\UI.hlsli">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="..\Resources\Shader\Portal.hlsli">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="..\Resources\Shader\TextureAnim.hlsli">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="..\Resources\Shader\EffectSub.hlsli">
+      <Filter>Shader</Filter>
+    </None>
+  </ItemGroup>
+</Project>

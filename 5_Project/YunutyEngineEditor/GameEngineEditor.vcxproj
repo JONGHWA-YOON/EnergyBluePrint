@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{c5b07a85-84b5-4b52-bccf-1546addcb9f5}</ProjectGuid>
+    <RootNamespace>GameEngineEditor</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>YunutyEditor</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)Bin\$(Platform)\$(Configuration)\</OutDir>
+    <LibraryPath>$(SolutionDir)Lib\$(Platform)\$(Configuration)\;$(OutDir);$(LibraryPath)</LibraryPath>
+    <IntDir>Intermediate\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)Bin\$(Platform)\$(Configuration)\</OutDir>
+    <LibraryPath>$(SolutionDir)Lib\$(Platform)\$(Configuration)\;$(OutDir);$(LibraryPath)</LibraryPath>
+    <IntDir>Intermediate\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)Bin\$(Platform)\$(Configuration)\</OutDir>
+    <LibraryPath>$(SolutionDir)Lib\$(Platform)\$(Configuration)\;$(OutDir);$(LibraryPath)</LibraryPath>
+    <IntDir>Intermediate\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)Bin\$(Platform)\$(Configuration)\</OutDir>
+    <LibraryPath>$(SolutionDir)Lib\$(Platform)\$(Configuration)\;$(OutDir);$(LibraryPath)</LibraryPath>
+    <IntDir>Intermediate\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>DebugMode;_HAS_STD_BYTE=0;WL_PLATFORM_WINDOWS;WL_DEBUG</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Yunuty\header\;$(SolutionDir)Yunu3DGraphicsInterface;$(SolutionDir)include\vulkan 1.3.216.0;$(SolutionDir)include\Walnut;$(SolutionDir)include\GLFW;$(SolutionDir)EXLibrary\Glad\include;$(SolutionDir)include;$(SolutionDir)include\imgui;$(SolutionDir)\include\ImGuizmo;$(SolutionDir)\include\glm;$(SolutionDir)\include\EXLibrary\msdf-atlas-gen\msdfgen;$(SolutionDir)\include\EXLibrary\msdf-atlas-gen\msdf-atlas-gen;$(SolutionDir)\include\EXLibrary\entt\include;$(SolutionDir)\include\include\EXLibrary\Box2D\include;$(SolutionDir)\include\EXLibrary\yaml-cpp\include;$(SolutionDir)\include\EXLibrary\filewatch;$(SolutionDir)\include\EXLibrary\mono\include;$(SolutionDir)\include\stb_image;$(SolutionDir)\include\EXLibrary\spdlog\include;$(ProjectDir)GameEngineEditor\Platform;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <EnableModules>true</EnableModules>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>d3d11.lib;d3dcompiler.lib;dxgi.lib;Yunuty.lib;GLFW.lib;ImGui.lib;Walnut.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>DebugMode;_HAS_STD_BYTE=0;WL_PLATFORM_WINDOWS;WL_DEBUG</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Yunuty\header\;$(SolutionDir)Yunu3DGraphicsInterface;$(SolutionDir)include\vulkan 1.3.216.0;$(SolutionDir)include\Walnut;$(SolutionDir)include\GLFW;$(SolutionDir)EXLibrary\Glad\include;$(SolutionDir)include;$(SolutionDir)include\imgui;$(SolutionDir)\include\ImGuizmo;$(SolutionDir)\include\glm;$(SolutionDir)\include\EXLibrary\msdf-atlas-gen\msdfgen;$(SolutionDir)\include\EXLibrary\msdf-atlas-gen\msdf-atlas-gen;$(SolutionDir)\include\EXLibrary\entt\include;$(SolutionDir)\include\include\EXLibrary\Box2D\include;$(SolutionDir)\include\EXLibrary\yaml-cpp\include;$(SolutionDir)\include\EXLibrary\filewatch;$(SolutionDir)\include\EXLibrary\mono\include;$(SolutionDir)\include\stb_image;$(SolutionDir)\include\EXLibrary\spdlog\include;$(ProjectDir)GameEngineEditor\Platform;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <EnableModules>true</EnableModules>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>d3d11.lib;d3dcompiler.lib;dxgi.lib;Yunuty.lib;GLFW.lib;ImGui.lib;Walnut.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>DebugMode;_HAS_STD_BYTE=0;WL_PLATFORM_WINDOWS;WL_DEBUG</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Yunuty\header\;$(SolutionDir)Yunu3DGraphicsInterface;$(SolutionDir)include\vulkan 1.3.216.0;$(SolutionDir)include\Walnut;$(SolutionDir)include\GLFW;$(SolutionDir)EXLibrary\Glad\include;$(SolutionDir)include;$(SolutionDir)include\imgui;$(SolutionDir)\include\ImGuizmo;$(SolutionDir)\include\glm;$(SolutionDir)\include\EXLibrary\msdf-atlas-gen\msdfgen;$(SolutionDir)\include\EXLibrary\msdf-atlas-gen\msdf-atlas-gen;$(SolutionDir)\include\EXLibrary\entt\include;$(SolutionDir)\include\include\EXLibrary\Box2D\include;$(SolutionDir)\include\EXLibrary\yaml-cpp\include;$(SolutionDir)\include\EXLibrary\filewatch;$(SolutionDir)\include\EXLibrary\mono\include;$(SolutionDir)\include\stb_image;$(SolutionDir)\include\EXLibrary\spdlog\include;$(ProjectDir)GameEngineEditor\Platform;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <EnableModules>true</EnableModules>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>d3d11.lib;d3dcompiler.lib;dxgi.lib;Yunuty.lib;GLFW.lib;ImGui.lib;Walnut.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>DebugMode;_HAS_STD_BYTE=0;WL_PLATFORM_WINDOWS;WL_DEBUG</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Yunuty\header\;$(SolutionDir)Yunu3DGraphicsInterface;$(SolutionDir)include\vulkan 1.3.216.0;$(SolutionDir)include\Walnut;$(SolutionDir)include\GLFW;$(SolutionDir)EXLibrary\Glad\include;$(SolutionDir)include;$(SolutionDir)include\imgui;$(SolutionDir)\include\ImGuizmo;$(SolutionDir)\include\glm;$(SolutionDir)\include\EXLibrary\msdf-atlas-gen\msdfgen;$(SolutionDir)\include\EXLibrary\msdf-atlas-gen\msdf-atlas-gen;$(SolutionDir)\include\EXLibrary\entt\include;$(SolutionDir)\include\include\EXLibrary\Box2D\include;$(SolutionDir)\include\EXLibrary\yaml-cpp\include;$(SolutionDir)\include\EXLibrary\filewatch;$(SolutionDir)\include\EXLibrary\mono\include;$(SolutionDir)\include\stb_image;$(SolutionDir)\include\EXLibrary\spdlog\include;$(ProjectDir)GameEngineEditor\Platform;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <EnableModules>true</EnableModules>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>d3d11.lib;d3dcompiler.lib;dxgi.lib;Yunuty.lib;GLFW.lib;ImGui.lib;Walnut.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Include\ImGui\backends\imgui_impl_dx11.cpp" />
+    <ClCompile Include="..\Include\ImGui\backends\imgui_impl_win32.cpp" />
+    <ClCompile Include="ButtonLogicManager.cpp" />
+    <ClCompile Include="Arrow.ixx" />
+    <ClCompile Include="Battery.cpp" />
+    <ClCompile Include="Battery.ixx" />
+    <ClCompile Include="Button.cpp" />
+    <ClCompile Include="Button.ixx" />
+    <ClCompile Include="ButtonLogicManager.ixx" />
+    <ClCompile Include="CallbackHandler.ixx" />
+    <ClCompile Include="Camera.ixx" />
+    <ClCompile Include="ComponentUI.ixx" />
+    <ClCompile Include="DebugPanel.cpp" />
+    <ClCompile Include="DebugPanel.ixx" />
+    <ClCompile Include="DebugManager.cpp" />
+    <ClCompile Include="Destination.ixx" />
+    <ClCompile Include="DX11Utility.cpp" />
+    <ClCompile Include="DX11Utility.ixx" />
+    <ClCompile Include="EffectParent.ixx" />
+    <ClCompile Include="EngineGraphicsUtility.cpp" />
+    <ClCompile Include="EngineGraphicsUtility.ixx" />
+    <ClCompile Include="htkg.ixx" />
+    <ClCompile Include="globalSymbols.ixx" />
+    <ClCompile Include="IButtonInteractable.ixx" />
+    <ClCompile Include="InGame.ixx" />
+    <ClCompile Include="Laser.cpp" />
+    <ClCompile Include="Laser.ixx" />
+    <ClCompile Include="ResourcesID.ixx" />
+    <ClCompile Include="Robot.cpp" />
+    <ClCompile Include="Robot.ixx" />
+    <ClCompile Include="SaveLoad.ixx" />
+    <ClCompile Include="SkinnedMeshWrapper.ixx" />
+    <ClCompile Include="Stage.cpp" />
+    <ClCompile Include="Stage.ixx" />
+    <ClCompile Include="HailKimJungIl.ixx" />
+    <ClCompile Include="JHImGui.ixx" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="EditorCamera.ixx" />
+    <ClCompile Include="EditorLayer.ixx" />
+    <ClCompile Include="EditorPanel.ixx" />
+    <ClCompile Include="GameEngineEditor.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GameEngineEditor2.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="SelectManager.cpp" />
+    <ClCompile Include="StaticMeshWrapper.ixx" />
+    <ClCompile Include="Tile.cpp" />
+    <ClCompile Include="Tile.ixx" />
+    <ClCompile Include="Timer.cpp" />
+    <ClCompile Include="Timer.ixx" />
+    <ClCompile Include="ui.ixx" />
+    <ClCompile Include="Editor_SceneManager.ixx" />
+    <ClCompile Include="GameEngineEditor.ixx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GameViewCamera.ixx" />
+    <ClCompile Include="GameViewPanel.ixx" />
+    <ClCompile Include="HierarchyPanel.ixx" />
+    <ClCompile Include="InspectorPanel.ixx" />
+    <ClCompile Include="ProjectPanel.ixx" />
+    <ClCompile Include="ScenePanel.ixx" />
+    <ClCompile Include="UIManager.cpp" />
+    <ClCompile Include="walnut.ixx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="EditorLayer.cpp" />
+    <ClCompile Include="EditorPanel.cpp" />
+    <ClCompile Include="Editor_SceneManager.cpp" />
+    <ClCompile Include="GameViewCamera.cpp" />
+    <ClCompile Include="GameViewPanel.cpp" />
+    <ClCompile Include="HierarchyPanel.cpp" />
+    <ClCompile Include="InspectorPanel.cpp" />
+    <ClCompile Include="ProjectPanel.cpp" />
+    <ClCompile Include="ScenePanel.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Include\ImGui\backends\imgui_impl_dx11.h" />
+    <ClInclude Include="..\Include\ImGui\backends\imgui_impl_win32.h" />
+    <ClInclude Include="ButtonLogicManager.h" />
+    <ClInclude Include="DebugManager.h" />
+    <ClInclude Include="SelectManager.h" />
+    <ClInclude Include="Timer.h" />
+    <ClInclude Include="UIManager.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="imgui">
+      <UniqueIdentifier>{20b90ce4-7fcb-4731-b9a0-075f875de82d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sources">
+      <UniqueIdentifier>{f18ab499-84e1-499f-8eff-9754361e0e52}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="imgui\new">
+      <UniqueIdentifier>{cd7d86b7-402b-4429-b564-3a4d9f31ed4b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Include\ImGui\imgui.cpp">
+      <Filter>imgui\new</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Include\ImGui\imgui_demo.cpp">
+      <Filter>imgui\new</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Include\ImGui\imgui_draw.cpp">
+      <Filter>imgui\new</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Include\ImGui\imgui_tables.cpp">
+      <Filter>imgui\new</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Include\ImGui\imgui_widgets.cpp">
+      <Filter>imgui\new</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Include\ImGui\backends\imgui_impl_glfw.cpp">
+      <Filter>imgui\new</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Include\ImGui\backends\imgui_impl_vulkan.cpp">
+      <Filter>imgui\new</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Include\ImGui\imconfig.h">
+      <Filter>imgui\new</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\ImGui\imgui.h">
+      <Filter>imgui\new</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\ImGui\imgui_internal.h">
+      <Filter>imgui\new</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\ImGui\imstb_rectpack.h">
+      <Filter>imgui\new</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\ImGui\imstb_textedit.h">
+      <Filter>imgui\new</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\ImGui\imstb_truetype.h">
+      <Filter>imgui\new</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\ImGui\backends\imgui_impl_glfw.h">
+      <Filter>imgui\new</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\ImGui\backends\imgui_impl_vulkan.h">
+      <Filter>imgui\new</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\README.txt" />
+    <None Include="..\..\misc\debuggers\imgui.natvis">
+      <Filter>sources</Filter>
+    </None>
+  </ItemGroup>
+</Project>

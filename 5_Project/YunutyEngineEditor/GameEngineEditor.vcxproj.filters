@@ -1,0 +1,372 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Editor_SceneManager.cpp">
+      <Filter>HeaderModules\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor_SceneManager.ixx">
+      <Filter>HeaderModules\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="GameEngineEditor.ixx">
+      <Filter>editor</Filter>
+    </ClCompile>
+    <ClCompile Include="EditorLayer.ixx">
+      <Filter>ui\EditorLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="EditorLayer.cpp">
+      <Filter>ui\EditorLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="EditorPanel.cpp">
+      <Filter>ui\EditorPanel</Filter>
+    </ClCompile>
+    <ClCompile Include="EditorPanel.ixx">
+      <Filter>ui\EditorPanel</Filter>
+    </ClCompile>
+    <ClCompile Include="ui.ixx">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="GameViewPanel.ixx">
+      <Filter>ui\GameViewPanel</Filter>
+    </ClCompile>
+    <ClCompile Include="GameViewPanel.cpp">
+      <Filter>ui\GameViewPanel</Filter>
+    </ClCompile>
+    <ClCompile Include="HierarchyPanel.ixx">
+      <Filter>ui\HierarchyPanel</Filter>
+    </ClCompile>
+    <ClCompile Include="HierarchyPanel.cpp">
+      <Filter>ui\HierarchyPanel</Filter>
+    </ClCompile>
+    <ClCompile Include="InspectorPanel.ixx">
+      <Filter>ui\InspectorPanel</Filter>
+    </ClCompile>
+    <ClCompile Include="InspectorPanel.cpp">
+      <Filter>ui\InspectorPanel</Filter>
+    </ClCompile>
+    <ClCompile Include="ProjectPanel.cpp">
+      <Filter>ui\ProjectPanel</Filter>
+    </ClCompile>
+    <ClCompile Include="ProjectPanel.ixx">
+      <Filter>ui\ProjectPanel</Filter>
+    </ClCompile>
+    <ClCompile Include="ScenePanel.cpp">
+      <Filter>ui\ScenePanel</Filter>
+    </ClCompile>
+    <ClCompile Include="ScenePanel.ixx">
+      <Filter>ui\ScenePanel</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.ixx">
+      <Filter>graphics\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>graphics\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="EditorCamera.ixx">
+      <Filter>how to kill god\EditorCamera</Filter>
+    </ClCompile>
+    <ClCompile Include="GameViewCamera.ixx">
+      <Filter>graphics\GameViewCamera</Filter>
+    </ClCompile>
+    <ClCompile Include="GameViewCamera.cpp">
+      <Filter>graphics\GameViewCamera</Filter>
+    </ClCompile>
+    <ClCompile Include="CallbackHandler.ixx">
+      <Filter>graphics\CallbackHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="walnut.ixx">
+      <Filter>HeaderModules</Filter>
+    </ClCompile>
+    <ClCompile Include="GameEngineEditor2.cpp">
+      <Filter>editor</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>editor</Filter>
+    </ClCompile>
+    <ClCompile Include="GameEngineEditor.cpp">
+      <Filter>editor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Include\ImGui\backends\imgui_impl_dx11.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Include\ImGui\backends\imgui_impl_win32.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="EngineGraphicsUtility.ixx">
+      <Filter>uitlity\EngineGraphicsUtility</Filter>
+    </ClCompile>
+    <ClCompile Include="EngineGraphicsUtility.cpp">
+      <Filter>uitlity\EngineGraphicsUtility</Filter>
+    </ClCompile>
+    <ClCompile Include="DX11Utility.ixx">
+      <Filter>uitlity\DX11Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="DX11Utility.cpp">
+      <Filter>uitlity\DX11Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="HailKimJungIl.ixx">
+      <Filter>testComponents</Filter>
+    </ClCompile>
+    <ClCompile Include="SelectManager.cpp">
+      <Filter>SelectManager</Filter>
+    </ClCompile>
+    <ClCompile Include="ComponentUI.ixx">
+      <Filter>how to kill god\ComponentUI</Filter>
+    </ClCompile>
+    <ClCompile Include="DebugPanel.ixx">
+      <Filter>ui\DebugPanel</Filter>
+    </ClCompile>
+    <ClCompile Include="DebugPanel.cpp">
+      <Filter>ui\DebugPanel</Filter>
+    </ClCompile>
+    <ClCompile Include="DebugManager.cpp">
+      <Filter>DebugManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Stage.ixx">
+      <Filter>how to kill god\InGame\Stage</Filter>
+    </ClCompile>
+    <ClCompile Include="Stage.cpp">
+      <Filter>how to kill god\InGame\Stage</Filter>
+    </ClCompile>
+    <ClCompile Include="IButtonInteractable.ixx">
+      <Filter>how to kill god\InGame\IButtonInteractable</Filter>
+    </ClCompile>
+    <ClCompile Include="InGame.ixx">
+      <Filter>how to kill god\InGame</Filter>
+    </ClCompile>
+    <ClCompile Include="Laser.ixx">
+      <Filter>how to kill god\InGame\Laser</Filter>
+    </ClCompile>
+    <ClCompile Include="Button.ixx">
+      <Filter>how to kill god\InGame\Button</Filter>
+    </ClCompile>
+    <ClCompile Include="Battery.ixx">
+      <Filter>how to kill god\InGame\Battery</Filter>
+    </ClCompile>
+    <ClCompile Include="Tile.ixx">
+      <Filter>how to kill god\InGame\Tile</Filter>
+    </ClCompile>
+    <ClCompile Include="Robot.ixx">
+      <Filter>how to kill god\InGame\Robot</Filter>
+    </ClCompile>
+    <ClCompile Include="Timer.ixx">
+      <Filter>how to kill god\Timer</Filter>
+    </ClCompile>
+    <ClCompile Include="Timer.cpp">
+      <Filter>how to kill god\Timer</Filter>
+    </ClCompile>
+    <ClCompile Include="Laser.cpp">
+      <Filter>how to kill god\InGame\Laser</Filter>
+    </ClCompile>
+    <ClCompile Include="Button.cpp">
+      <Filter>how to kill god\InGame\Button</Filter>
+    </ClCompile>
+    <ClCompile Include="Battery.cpp">
+      <Filter>how to kill god\InGame\Battery</Filter>
+    </ClCompile>
+    <ClCompile Include="Tile.cpp">
+      <Filter>how to kill god\InGame\Tile</Filter>
+    </ClCompile>
+    <ClCompile Include="Robot.cpp">
+      <Filter>how to kill god\InGame\Robot</Filter>
+    </ClCompile>
+    <ClCompile Include="htkg.ixx">
+      <Filter>how to kill god</Filter>
+    </ClCompile>
+    <ClCompile Include="globalSymbols.ixx">
+      <Filter>ui\globalSymbols</Filter>
+    </ClCompile>
+    <ClCompile Include="JHImGui.ixx">
+      <Filter>JHImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="UIManager.cpp">
+      <Filter>how to kill god\UI_Button</Filter>
+    </ClCompile>
+    <ClCompile Include="Arrow.ixx">
+      <Filter>how to kill god\InGame\Arrow</Filter>
+    </ClCompile>
+    <ClCompile Include="EffectParent.ixx">
+      <Filter>how to kill god\InGame\EffectParent</Filter>
+    </ClCompile>
+    <ClCompile Include="SkinnedMeshWrapper.ixx">
+      <Filter>how to kill god\InGame\SkinnedMeshWrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="StaticMeshWrapper.ixx">
+      <Filter>how to kill god\InGame\StaticMeshWrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourcesID.ixx">
+      <Filter>how to kill god\resourcesID</Filter>
+    </ClCompile>
+    <ClCompile Include="Destination.ixx">
+      <Filter>how to kill god\InGame\Destination</Filter>
+    </ClCompile>
+    <ClCompile Include="ButtonLogicManager.cpp">
+      <Filter>how to kill god\UI_Button</Filter>
+    </ClCompile>
+    <ClCompile Include="SaveLoad.ixx">
+      <Filter>how to kill god\SaveLoad</Filter>
+    </ClCompile>
+    <ClCompile Include="ButtonLogicManager.ixx">
+      <Filter>how to kill god\UI_Button</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="graphics">
+      <UniqueIdentifier>{f467d53c-c231-4be5-9f4b-c24f863cf261}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui">
+      <UniqueIdentifier>{21c508ad-c585-42c4-ae22-2ec411f2e04d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="editor">
+      <UniqueIdentifier>{ef4f34b1-dc5d-42e5-b19b-9ac26dc37807}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui\EditorLayer">
+      <UniqueIdentifier>{1f7dd8eb-ca76-4ddf-9a57-aa243c360835}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui\EditorPanel">
+      <UniqueIdentifier>{fb86c904-a804-4fbe-91f4-ce2d7db2ab09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui\GameViewPanel">
+      <UniqueIdentifier>{28c89c9c-dde2-439b-8fba-9bf84f40976e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui\HierarchyPanel">
+      <UniqueIdentifier>{80380159-2c7c-4ad9-8ce0-25bbcde3c58c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui\InspectorPanel">
+      <UniqueIdentifier>{cfee0e15-335a-4595-8e3d-def4db5c20db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui\ProjectPanel">
+      <UniqueIdentifier>{2812ebb0-eb94-4c1b-bb92-3040448c99bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui\ScenePanel">
+      <UniqueIdentifier>{f450201f-fe1f-4253-bff2-4c1498e84cf4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="graphics\Camera">
+      <UniqueIdentifier>{f95216be-da44-4acf-b91a-9761f210eecf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="graphics\GameViewCamera">
+      <UniqueIdentifier>{9f98a128-4071-424c-804e-48fd19f04978}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="graphics\CallbackHandler">
+      <UniqueIdentifier>{e0ef0331-9d41-460e-92a0-3ee9035482b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HeaderModules">
+      <UniqueIdentifier>{bb224854-959d-47e8-a78b-0fcc6446d7b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HeaderModules\scene">
+      <UniqueIdentifier>{610e7bb7-5164-454a-bc13-a473f54d5424}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ImGui">
+      <UniqueIdentifier>{17c9d508-c78d-41e1-b368-717dd71568dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="uitlity">
+      <UniqueIdentifier>{cd81ffc7-d15d-43d7-b72c-d020e1ead346}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="uitlity\EngineGraphicsUtility">
+      <UniqueIdentifier>{470d3b2f-1c63-4c5a-9b3a-6ef344c3ded4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="uitlity\DX11Utility">
+      <UniqueIdentifier>{880847b6-9f58-499a-93b5-3b06de97ee1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="testComponents">
+      <UniqueIdentifier>{909c1f98-01ec-4572-bedd-c616cbe22670}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SelectManager">
+      <UniqueIdentifier>{a21536f4-c259-4fb7-a354-4471edc23e33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="how to kill god">
+      <UniqueIdentifier>{8bdb393e-f866-4412-911a-dc77496bf75b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="how to kill god\ComponentUI">
+      <UniqueIdentifier>{ef424757-e4bf-4ebe-83a0-c510b8340c05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui\DebugPanel">
+      <UniqueIdentifier>{b43c8d21-beaf-4dc5-9b98-005339ff94dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DebugManager">
+      <UniqueIdentifier>{0e94441d-91fe-4677-8e0a-89761227ca71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="how to kill god\EditorCamera">
+      <UniqueIdentifier>{8324ef66-71d7-418c-817a-70fb4fbe6063}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="how to kill god\InGame">
+      <UniqueIdentifier>{1dcae203-06c6-4155-97dd-d9550a5fb5c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="how to kill god\InGame\IButtonInteractable">
+      <UniqueIdentifier>{1c731b0c-ed39-42f0-94e6-942fdd7b5d19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="how to kill god\InGame\Stage">
+      <UniqueIdentifier>{96468aca-3e19-4d2a-9654-ed6b1c6c2c98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="how to kill god\InGame\Laser">
+      <UniqueIdentifier>{f5196956-af2c-4c2c-96ae-289f44c33f8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="how to kill god\InGame\Button">
+      <UniqueIdentifier>{6b78e8e5-a4f7-4611-a9d6-642dfdf16b97}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="how to kill god\InGame\Battery">
+      <UniqueIdentifier>{d68c4b74-166f-47a1-ba60-f98bd4ca0292}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="how to kill god\InGame\Robot">
+      <UniqueIdentifier>{5a617b52-652f-4f21-9a97-5655888d5217}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="how to kill god\InGame\Tile">
+      <UniqueIdentifier>{9b340324-c0b7-47f8-9699-7d9163a71974}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="how to kill god\Timer">
+      <UniqueIdentifier>{1968f2cd-802d-41ab-aa17-243ee3d0aa0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui\globalSymbols">
+      <UniqueIdentifier>{5cab6270-aa2c-4b98-8335-e16d48f08819}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="JHImGui">
+      <UniqueIdentifier>{18891adf-cdea-43be-bb8b-796b3edbc09f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="how to kill god\UI_Button">
+      <UniqueIdentifier>{942fdf65-e705-4544-b474-5e93798b4541}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="how to kill god\InGame\Arrow">
+      <UniqueIdentifier>{2ae6ef4a-fd2a-49f9-9f07-5623f9aa4f1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="how to kill god\InGame\EffectParent">
+      <UniqueIdentifier>{62bb3c85-9659-45f0-b24b-0dd7f8fae863}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="how to kill god\InGame\StaticMeshWrapper">
+      <UniqueIdentifier>{787988dd-9b76-4fb0-9576-7da48a2e141c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="how to kill god\InGame\SkinnedMeshWrapper">
+      <UniqueIdentifier>{7667c597-cbd4-4d9b-a162-d76730e200b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="how to kill god\resourcesID">
+      <UniqueIdentifier>{ca58f385-ef92-453e-8653-0d13fc91cff8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="how to kill god\InGame\Destination">
+      <UniqueIdentifier>{0bd26f96-c20a-4eab-ab6d-78eec192f745}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="how to kill god\SaveLoad">
+      <UniqueIdentifier>{fad3dd3e-d275-422c-ba76-1c4e96426a57}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Include\ImGui\backends\imgui_impl_dx11.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\ImGui\backends\imgui_impl_win32.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="SelectManager.h">
+      <Filter>SelectManager</Filter>
+    </ClInclude>
+    <ClInclude Include="DebugManager.h">
+      <Filter>DebugManager</Filter>
+    </ClInclude>
+    <ClInclude Include="UIManager.h">
+      <Filter>how to kill god\UI_Button</Filter>
+    </ClInclude>
+    <ClInclude Include="Timer.h">
+      <Filter>how to kill god\Timer</Filter>
+    </ClInclude>
+    <ClInclude Include="ButtonLogicManager.h">
+      <Filter>how to kill god\UI_Button</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
